@@ -863,7 +863,7 @@ impl AppRouteVc {
                 );
 
                 EcmascriptModuleAssetVc::new_with_inner_assets(
-                    internal_asset.into(),
+                    internal_asset,
                     this.context,
                     Value::new(EcmascriptModuleAssetType::Typescript),
                     EcmascriptInputTransformsVc::cell(vec![EcmascriptInputTransform::TypeScript {
