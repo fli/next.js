@@ -13,7 +13,7 @@ function test() {
   it('should make a GET request to /cryto which should support node builtins', async () => {
     const res = await fetch('/crypto')
     const text = await res.text()
-    expect(text).toEqual('{ "data": "crypto" }')
+    expect(text).toEqual('{"data":"secret"}')
     expect(res.headers.get('method')).toEqual('GET')
   }, 20000)
 
